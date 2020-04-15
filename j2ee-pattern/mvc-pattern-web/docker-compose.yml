@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mvc-pattern-web:
+    container_name: mvc-pattern-web
+    image: mvc-pattern-web
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - 8080:8080
+      - 9000:8000
